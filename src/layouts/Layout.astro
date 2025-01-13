@@ -1,5 +1,6 @@
 ---
 import AsideMenu from '../components/AsideMenu.astro'
+import { ClientRouter } from 'astro:transitions';
 ---
 
 
@@ -11,6 +12,7 @@ import AsideMenu from '../components/AsideMenu.astro'
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
+    <ClientRouter fallback='none' />
 	</head>
 	<body>
 		<div id="app" class="relative h-screen p-2 gap-2"> 
